@@ -3,17 +3,17 @@ import Feature from './Feature'
 
 const MyFeatures = () => {
   return (
-    <Container className='my-5'>
+    <Container className='my-5 py-5'>
         <Row>
           <Feature 
             icon={'list-ul'}
             title={'Administra Contactos'}
-            desc={'Agregue, elimine y edite fácilmente sus contactos.'}
+            desc={'Agrega, elimina y edita fácilmente tus contactos.'}
             />
           <Feature 
             icon={'folder'}
             title={'Organiza Grupos'}
-            desc={'Agrupe sus contactos para facilitar acceso y gestión.'}
+            desc={'Agrupa tus contactos para facilitar acceso y gestión.'}
             />
           <Feature 
             icon={'cloud'}

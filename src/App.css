@@ -16,3 +16,7 @@
 .hero p {
   font-size: 1.5rem;
 }
+
+.api {
+  min-height: 100vh;
+}

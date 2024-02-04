@@ -5,7 +5,7 @@ const Feature = ({icon, title, desc}) => {
   return (
     <Col>
       <box-icon name={icon} size='lg'></box-icon>
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       <p>{desc}</p>
     </Col>
   )
