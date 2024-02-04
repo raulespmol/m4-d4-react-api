@@ -6,8 +6,8 @@ const MyHero = () => {
       <h1>Bienvenido a ContactList</h1>
       <p>Administra, organiza y sincroniza tus contactos en todos tus dispositivos.</p>
       <div className="d-flex gap-2">
-        <Button variant='dark'>Crear Cuenta</Button>
-        <Button variant='outline-dark'>Iniciar Sesion</Button>
+        <Button variant='primary'>Crear Cuenta</Button>
+        <Button variant='outline-primary'>Iniciar Sesion</Button>
       </div>
     </Container>
   )
