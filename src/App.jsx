@@ -22,7 +22,8 @@ function App() {
   const dataFiltered = users.filter((user) => {
     const searchFilter = search.toLowerCase()
     return (
-      user.name.first.toLowerCase().includes(searchFilter)
+      user.name.first.toLowerCase().includes(searchFilter) ||
+      user.name.last.toLowerCase().includes(searchFilter)
       );
     })
 
