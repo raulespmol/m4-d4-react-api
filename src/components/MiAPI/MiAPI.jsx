@@ -2,39 +2,50 @@ import { useState, useEffect } from 'react'
 import { Col, Card, Image } from 'react-bootstrap'
 
 const MiAPI = ({setUsers, dataFiltered}) => {
-  const [order, setOrder] = useState('ASC')
-  const [sorting, setSorting] = useState([...dataFiltered])
+  const [order, setOrder] = useState('A-Z')
 
   const url = `https://randomuser.me/api/?results=36`
   const getAPI = async () => {
     const response = await fetch(url)
     const data = await response.json()
     setUsers(data.results)
-    
   }
 
   useEffect(() => {
     getAPI()
   }, [])
 
-  const sorted = () => {
-    if(order === 'ASC'){
-      const sortedData = [...dataFiltered].sort((a,b) => {
-        if(a.name.first > b.name.first) {
-          return 1
-        }
-        if(a.name.first < b.name.first) {
-          return -1
-        }
+  const sortContacts = () => {
+    if(order === 'A-Z'){
+      dataFiltered.sort((a,b) => {
+        if(a.name.first < b.name.first) return 1
+        if(a.name.first > b.name.first) return -1
         return 0
       })
-      setSorting(sortedData)
+    }
+    if(order === 'Z-A'){
+      dataFiltered.sort((a,b) => {
+        if(a.name.first > b.name.first) return 1
+        if(a.name.first < b.name.first) return -1
+        return 0
+      })
     }
   }
 
+  const handleOption = (e) => {
+    setOrder(e.target.value)
+    sortContacts()
+  }
+
+
   return (
     <>
-      {sorting.map((user, index) => {
+      <select onChange={handleOption}>
+        <option value="A-Z">Nombre A-Z</option>
+        <option value="Z-A">Nombre Z-A</option>
+      </select>
+      {dataFiltered
+      .map((user, index) => {
         const {name, location, picture, cell, email} = user
         return (
           <Col xs={6} md={4} lg={3} className='g-4' key={index}>
