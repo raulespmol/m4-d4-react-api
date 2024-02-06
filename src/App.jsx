@@ -43,7 +43,7 @@ function App() {
             </Col>
           </Row>
           <Row>
-            <MiAPI users={users} setUsers={setUsers} dataFiltered={dataFiltered}/>
+            <MiAPI setUsers={setUsers} dataFiltered={dataFiltered}/>
           </Row>
         </Container>
       </Container>
