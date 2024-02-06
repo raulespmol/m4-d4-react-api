@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import MyNavbar from './components/Landing/MyNavbar'
-import MyHero from './components/Landing/MyHero'
+import MyHero from './components/Landing/Hero/MyHero'
 import MyFeatures from './components/Landing/Features/MyFeatures'
 import MiAPI from './components/MiAPI'
 import Buscador from './components/Buscador'
