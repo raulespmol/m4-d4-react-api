@@ -3,6 +3,7 @@ import { useState } from 'react'
 import MyNavbar from './components/Landing/MyNavbar'
 import MyHero from './components/Landing/Hero/MyHero'
 import MyFeatures from './components/Landing/Features/MyFeatures'
+import MyFooter from './components/Landing/MyFooter'
 import MiAPI from './components/MiAPI'
 import Buscador from './components/Buscador'
 
@@ -10,7 +11,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
-import MyFooter from './components/Landing/MyFooter'
 
 function App() {
   const [users, setUsers] = useState([])
