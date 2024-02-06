@@ -10,6 +10,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
+import MyFooter from './components/Landing/Footer/MyFooter'
 
 function App() {
   const [users, setUsers] = useState([])
@@ -47,6 +48,7 @@ function App() {
         </Container>
       </Container>
 
+      <MyFooter />
     </>
   )
 }
