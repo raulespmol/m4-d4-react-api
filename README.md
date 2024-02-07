@@ -12,4 +12,4 @@ La prueba consiste en construir una aplicación que consuma una API a elección,
 6. Ordena los resultados por algún criterio que estimes conveniente, puede ser alfabéticamente, de menor a mayor, etc.
 7. Agrega un diseño coherente a tu aplicación.
 
- [Explicacion del resultado]
+ [Link al video de explicación](https://www.youtube.com/watch?v=i9O1o35P-pY)
